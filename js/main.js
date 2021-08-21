@@ -71,8 +71,11 @@ document.getElementById('cupon-btn').addEventListener('click', function () {
   const cuponValue = cuponInput.value;
   const totalField = document.getElementById('total-field');
   const totalPrice = parseInt(totalField.innerText);
-  const discount = totalPrice / 20;
+  /*   const discount = totalPrice / 20;
+  const discPrice = totalPrice - discount; */
+  const discount = (totalPrice * 20) / 100;
   const discPrice = totalPrice - discount;
+
   //validating cupon
   if (cuponValue == 'stevekaku') {
     totalField.innerText = discPrice;
