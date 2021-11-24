@@ -16,7 +16,7 @@ function calculateToatl() {
   const storagePrice = getValue('storage');
   const deliveryPrice = getValue('delivery');
   const bestPrice = 1299;
-  // caculate total and set total in total price
+  // calculate total and set total in total price
   const totalPrice = memoryPrice + storagePrice + deliveryPrice + bestPrice;
   const total = document.getElementById('total');
   total.innerText = totalPrice;
